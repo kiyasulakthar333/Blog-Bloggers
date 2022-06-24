@@ -1,8 +1,8 @@
 # Blog-Bloggers
 The Blog and Bloggers support such features as:
 
-●	Authentication/Authorization;
-●	Writing, and formatting articles. Adding tags;
+* ●	Authentication/Authorization;
+* ●	Writing, and formatting articles. Adding tags;
 ●	Reading, rating, and commenting on articles. Watching article statistics;
 ●	Searching articles by tag;
 ●	Subscriptions/Subscribers;
