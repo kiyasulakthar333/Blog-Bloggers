@@ -1,0 +1,27 @@
+{
+  "rules": {
+    "articles": {
+      ".read": "true",
+      "$article": {
+        ".write": "true",
+        "$owner": {
+          ".write": "auth != null && auth.uid == $owner"
+        }
+      }
+    },
+    "tags": {
+      ".read": "true",
+      ".write": "true",
+      ".indexOn": "lastUses"
+    },
+    "users": {
+      "$uid": {
+        ".read": "true",
+        ".write": "auth != null && auth.uid == $uid",
+        "subscribers": {
+          ".write": "true"
+        }
+      }
+    }
+  }
+}
